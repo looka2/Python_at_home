@@ -3,7 +3,7 @@ def do_math():
     print("Simple math problems")
     print("1. Mixed Problems")
     """Questions"""
-    numbers = [random.randrange(start=1, stop=12) for _ in range(10)]
+    numbers = [random.randrange(start=1, stop=20) for _ in range(10)]
     a = int(input(f'What is {numbers[1]} X {numbers[5]} : '))
     b = int(input(f'What is {numbers[2]} - {numbers[6]} : '))
     c = int(input(f'What is {numbers[3]} X {numbers[7]} : '))
@@ -34,25 +34,18 @@ def do_math():
 
     if a == numbers[1]*numbers[5]:
         print("1. Correct!")
-
     else:
         print("1. Incorrect")
-
     if b == numbers[2]-numbers[6]:
         print("2. Correct!")
-
     else:
         print("2. Incorrect")
-
     if c == numbers[3]*numbers[7]:
         print("3. Correct!")
-
     else:
         print("3. Incorrect")
-
     if d == numbers[4]+numbers[8]:
         print("4. Correct!")
-
     else:
         print("4. Incorrect")
 
