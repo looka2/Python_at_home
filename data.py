@@ -1,44 +1,30 @@
 import random
 def do_math():
-    print("Some simple math problems")
-    print("Toets 1")
+    print("Simple math problems")
+    print("1. Mixed Problems")
     """Questions"""
-    aa = random.randrange(start=1, stop=17)
-    ab = random.randrange(start=1, stop=17)
-    ba = random.randrange(start=600, stop=800)
-    bb = random.randrange(start=60, stop=600)
-    ca = random.randrange(start=70, stop=97)
-    cb = random.randrange(start=1, stop=97)
-    da = random.randrange(start=30, stop=87)
-    db = random.randrange(start=1, stop=9)
-    a = int(input(f'What is {aa} X {ab}: '))
-    b = int(input(f'What is {ba} - {bb}: '))
-    c = int(input(f'What is {ca} + {cb}: '))
-    d = int(input(f'What is {da} ÷ {db}: '))
+    numbers = [random.randrange(start=1, stop=12) for _ in range(10)]
+    a = int(input(f'What is {numbers[1]} X {numbers[5]} : '))
+    b = int(input(f'What is {numbers[2]} - {numbers[6]} : '))
+    c = int(input(f'What is {numbers[3]} X {numbers[7]} : '))
+    d = int(input(f'What is {numbers[4]} + {numbers[8]} : '))
 
     """Grading system voor toets 1"""
 
-    if a == aa*ab:
+    if a == numbers[1]*numbers[5]:
         a1 = 100
-
     else:
         a1 = 0
-
-    if b == ba-bb:
+    if b == numbers[2]-numbers[6]:
         b1 = 100
-
     else:
         b1 = 0
-
-    if c == ca+cb:
+    if c == numbers[3]*numbers[7]:
         c1 = 100
-
     else:
         c1 = 0
-
-    if d == da/db:
+    if d == numbers[4]+numbers[8]:
         d1 = 100
-
     else:
         d1 = 0
 
@@ -46,25 +32,25 @@ def do_math():
 
     """Answer System"""
 
-    if a == aa*ab:
+    if a == numbers[1]*numbers[5]:
         print("1. Correct!")
 
     else:
         print("1. Incorrect")
 
-    if b == ba-bb:
+    if b == numbers[2]-numbers[6]:
         print("2. Correct!")
 
     else:
         print("2. Incorrect")
 
-    if c == ca+cb:
+    if c == numbers[3]*numbers[7]:
         print("3. Correct!")
 
     else:
         print("3. Incorrect")
 
-    if d == da/db:
+    if d == numbers[4]+numbers[8]:
         print("4. Correct!")
 
     else:
