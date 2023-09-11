@@ -3,60 +3,37 @@ import random
 
 def do_math():
     print("Simple math problems")
-    print("1. Mixed Problems")
-    """Questions"""
-    numbers = [random.randrange(start=1, stop=20) for _ in range(10)]
-    a = int(input(f'What is {numbers[1]} X {numbers[5]} : '))
-    b = int(input(f'What is {numbers[2]} - {numbers[6]} : '))
-    c = int(input(f'What is {numbers[3]} X {numbers[7]} : '))
-    d = int(input(f'What is {numbers[4]} + {numbers[8]} : '))
+    numbers = [random.randint(1, 20) for _ in range(10)]
+    answers = []
+    grades = []
 
-    """Grading system voor toets 1"""
+    for i in range(4):
+        operation = random.choice(['*', '-', '+'])
+        num1 = numbers[i + 1]
+        num2 = numbers[i + 5]
+        question = f'What is {num1} {operation} {num2}: '
+        answer = int(input(question))
+        answers.append(answer)
 
-    if a == numbers[1] * numbers[5]:
-        a1 = 100
-    else:
-        a1 = 0
-    if b == numbers[2] - numbers[6]:
-        b1 = 100
-    else:
-        b1 = 0
-    if c == numbers[3] * numbers[7]:
-        c1 = 100
-    else:
-        c1 = 0
-    if d == numbers[4] + numbers[8]:
-        d1 = 100
-    else:
-        d1 = 0
+        if operation == '*':
+            correct_answer = num1 * num2
+        elif operation == '-':
+            correct_answer = num1 - num2
+        else:
+            correct_answer = num1 + num2
 
-    print("")
+        if answer == correct_answer:
+            grade = 100
+            print(f'{i + 1}. Correct!')
+        else:
+            grade = 0
+            print(f'{i + 1}. Incorrect')
+        grades.append(grade)
 
-    """Answer System"""
+    total = sum(grades)
+    average = total / 4
 
-    if a == numbers[1] * numbers[5]:
-        print("1. Correct!")
-    else:
-        print("1. Incorrect")
-    if b == numbers[2] - numbers[6]:
-        print("2. Correct!")
-    else:
-        print("2. Incorrect")
-    if c == numbers[3] * numbers[7]:
-        print("3. Correct!")
-    else:
-        print("3. Incorrect")
-    if d == numbers[4] + numbers[8]:
-        print("4. Correct!")
-    else:
-        print("4. Incorrect")
-
-    tot = a1 + b1 + c1 + d1
-    avg = tot / 4
-
-    """Grading system voor toets 1"""
-
-    print("Your Score is", avg, "%")
+    print("\nYour Score is", average, "%")
 
 
 if __name__ == '__main__':
@@ -67,6 +44,16 @@ def grades():
     print("")
     print("")
     print("Grading System")
+    print("")
+    cijfer = []
+    for _ in range(5):
+        cijfer.append(_)
+    cijfer[1] = int(input("Cijfer 1. "))
+    cijfer[2] = int(input("Cijfer 2. "))
+    cijfer[3] = int(input("Cijfer 3. "))
+    cijfer[4] = int(input("Cijfer 4. "))
+    avg = sum(cijfer)/4
+    print("Your score is", avg, "%")
 
 
 if __name__ == '__main__':
