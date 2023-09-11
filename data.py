@@ -7,10 +7,10 @@ def do_math():
     answers = []
     grades = []
 
-    for i in range(4):
+    for i in range(7):
         operation = random.choice(['*', '-', '+'])
         num1 = numbers[i + 1]
-        num2 = numbers[i + 5]
+        num2 = numbers[i + 2]
         question = f'What is {num1} {operation} {num2}: '
         answer = int(input(question))
         answers.append(answer)
@@ -31,9 +31,9 @@ def do_math():
         grades.append(grade)
 
     total = sum(grades)
-    average = total / 4
+    average = total / 7
 
-    print("\nYour Score is", average, "%")
+    print("\nYour Score is", round(average), "%\n")
 
 
 if __name__ == '__main__':
@@ -41,10 +41,7 @@ if __name__ == '__main__':
 
 
 def grades():
-    print("")
-    print("")
-    print("Grading System")
-    print("")
+    print("\nGrading System\n")
     cijfer = []
     for _ in range(5):
         cijfer.append(_)
@@ -53,7 +50,7 @@ def grades():
     cijfer[3] = int(input("Cijfer 3. "))
     cijfer[4] = int(input("Cijfer 4. "))
     avg = sum(cijfer)/4
-    print("Your score is", avg, "%")
+    print("Your score is", round(avg), "%")
 
 
 if __name__ == '__main__':
