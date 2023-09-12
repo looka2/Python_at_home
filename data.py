@@ -1,4 +1,5 @@
 import random
+from pprint import pprint
 
 
 def do_math():
@@ -42,16 +43,28 @@ if __name__ == '__main__':
 
 def grades():
     print("\nGrading System\n")
-    cijfer = []
+    grade = []
     for _ in range(5):
-        cijfer.append(_)
-    cijfer[1] = int(input("Cijfer 1. "))
-    cijfer[2] = int(input("Cijfer 2. "))
-    cijfer[3] = int(input("Cijfer 3. "))
-    cijfer[4] = int(input("Cijfer 4. "))
-    avg = sum(cijfer)/4
+        grade.append(_)
+    grade[1] = int(input("Cijfer 1. "))
+    grade[2] = int(input("Cijfer 2. "))
+    grade[3] = int(input("Cijfer 3. "))
+    grade[4] = int(input("Cijfer 4. "))
+    avg = sum(grade) / 4
     print("Your score is", round(avg), "%")
 
 
 if __name__ == '__main__':
     grades()
+
+
+def toolbox():
+    import pprint
+    personjan = ["Name : Jan Tutorial", "age : 24", "birthday : jan 14 1999"]
+    personjan.insert(0, personjan[:])
+    pp = pprint.PrettyPrinter(indent=4)
+    pp.pprint(personjan)
+
+
+if __name__ == '__main__':
+    toolbox()
