@@ -41,6 +41,37 @@ if __name__ == '__main__':
     do_math()
 
 
+def cirkeldiagram():
+    import datetime
+    datewis1 = datetime.date(2023, 9, 8)
+
+    s = " "
+
+    text = "Gemaakt door Luka op"
+
+    totaal_hoeveelheid = int(input("Wat is het totaal? "))
+
+    hoeveelheid_van = int(input("Wat is de hoeveelheid? "))
+
+    # noinspection PyRedundantParentheses
+    c = (360 / totaal_hoeveelheid) * (hoeveelheid_van)
+
+    print("\nde hoek is", c, "graden\n")
+
+    print(f'{text}{s}{datewis1}')
+
+    from datetime import datetime
+
+    now = datetime.now()
+
+    dt_n = now.strftime("%Y-%m-%d %H:%M:%S")
+    print("Uitgevoerd op", dt_n)
+
+
+if __name__ == '__main__':
+    cirkeldiagram()
+
+
 def grades():
     print("\nGrading System\n")
     grade = []
@@ -60,8 +91,8 @@ if __name__ == '__main__':
 
 def toolbox():
     import pprint
-    personjan = ["Name : Jan Tutorial", "age : 24", "birthday : jan 14 1999"]
-    personjan.insert(0, personjan[:])
+    personjan = ["Contact Card Jan", "Name : Jan Tutorial", "age : 24", "birthday : jan 14 1999"]
+    personjan.insert(0, personjan)
     pp = pprint.PrettyPrinter(indent=4)
     pp.pprint(personjan)
 
