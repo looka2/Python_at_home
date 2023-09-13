@@ -45,16 +45,17 @@ def cirkeldiagram():
     import datetime
     datewis1 = datetime.date(2023, 9, 8)
 
-    s = " "
-
     text = "Gemaakt door Luka op"
 
-    totaal_hoeveelheid = int(input("Wat is het totaal? "))
+    a = (int(input("Wat is het totaal? ")))
+    totaal_hoeveelheid = a
 
-    hoeveelheid_van = int(input("Wat is de hoeveelheid? "))
+    b = (int(input("Wat is de hoeveelheid? ")))
+    hoeveelheid_van = b
 
     # noinspection PyRedundantParentheses
-    c = (360 / totaal_hoeveelheid) * (hoeveelheid_van)
+    c = (360 / a) * (b)
+    hoeveel_graden = c
 
     print("\nde hoek is", c, "graden\n")
 
@@ -81,8 +82,8 @@ def grades():
     grade[2] = int(input("Cijfer 2. "))
     grade[3] = int(input("Cijfer 3. "))
     grade[4] = int(input("Cijfer 4. "))
-    avg = sum(grade) / 4
-    print("Your score is", round(avg), "%")
+    avg = round(sum(grade) / 4)
+    print("Your score is", avg, "%")
 
 
 if __name__ == '__main__':
@@ -91,10 +92,19 @@ if __name__ == '__main__':
 
 def toolbox():
     import pprint
-    personjan = ["Contact Card Jan", "Name : Jan Tutorial", "age : 24", "birthday : jan 14 1999"]
-    personjan.insert(0, personjan)
+    person = []
+    load = int(input("Contact Number Please\n"))
+
+    for _ in range(load + 1):
+        person.append(_)
+    person[0] = ("Contact Card Bob", "Name : Bob Tutorial", "age : 75", "birthday : Apr 07 1846")
+    person[1] = ("Contact Card Jan", "Name : Jan Tutorial", "age : 24", "birthday : jan 14 1999")
+    person[2] = ("Contact Card Hola", "Name : Hola Tutorial", "age : 23", "birthday : jan 13 2000")
+
+
+    person.insert(0, person)
     pp = pprint.PrettyPrinter(indent=4)
-    pp.pprint(personjan)
+    pp.pprint(person[load])
 
 
 if __name__ == '__main__':
