@@ -105,7 +105,7 @@ def toolbox():
 
     person.insert(0, person)
     pp = pprint.PrettyPrinter(indent=4)
-    pp.pprint(person[load])
+    pp.pprint(personjan)
 
 
 if __name__ == '__main__':
