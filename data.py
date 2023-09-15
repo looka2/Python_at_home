@@ -4,7 +4,6 @@ import random
 def do_math():
     import os
     print("Simple math problems")
-    print("os name is :", os.name)
     numbers = [random.randint(1, 20) for _ in range(10)]
     answers = []
     grades = []
@@ -36,7 +35,13 @@ def do_math():
     average = total / 7
 
     print("\nYour Score is", round(average), "%\n")
-
+    debug = input("Would you like to print debug info y/N ")
+    if debug == 'y':
+        print("\nos name is :", os.name,"\nThank you for taking this quiz")
+    elif debug == '':
+        print("Thank you for taking this quiz")
+    else:
+        print("Thank you for taking this quiz")
 
 if __name__ == '__main__':
     do_math()
@@ -45,7 +50,6 @@ if __name__ == '__main__':
 def cirkeldiagram():
     import datetime
     import os
-    print("os name is :", os.name)
     datewis1 = datetime.date(2023, 9, 8)
 
     text = "Gemaakt door Luka op"
@@ -66,6 +70,13 @@ def cirkeldiagram():
 
     dt_n = now.strftime("%Y-%m-%d %H:%M:%S")
     print("Uitgevoerd op", dt_n)
+    debug = input("Would you like to print debug info y/N ")
+    if debug == 'y':
+        print("\nos name is :", os.name, "\nThank you for taking this quiz")
+    elif debug == '':
+        print("Thank you for taking this quiz")
+    else:
+        print("Thank you for taking this quiz")
 
 
 if __name__ == '__main__':
@@ -74,7 +85,6 @@ if __name__ == '__main__':
 
 def grades():
     import os
-    print("os name is :", os.name)
     print("\nGrading System\n")
     grade = []
     for _ in range(5):
@@ -85,6 +95,13 @@ def grades():
     grade[4] = int(input("Cijfer 4. "))
     avg = round(sum(grade) / 4)
     print("Your score is", avg, "%")
+    debug = input("Would you like to print debug info y/N ")
+    if debug == 'y':
+        print("\nos name is :", os.name, "\nThank you for taking this quiz")
+    elif debug == '':
+        print("Thank you for taking this quiz")
+    else:
+        print("Thank you for taking this quiz")
 
 
 if __name__ == '__main__':
@@ -95,7 +112,6 @@ def toolbox():
     import pprint
     import os
     from time import sleep
-    print("os name is :", os.name)
     person = []
     load = int(input("Contact Number Please\n"))
 
@@ -110,6 +126,13 @@ def toolbox():
     pp = pprint.PrettyPrinter(indent=4)
     pp.pprint(person[load])
     sleep(4)
+    debug = input("Would you like to print debug info y/N ")
+    if debug == 'y':
+        print("\nos name is :", os.name, "\nThank you for taking this quiz")
+    elif debug == '':
+        print("Thank you for taking this quiz")
+    else:
+        print("Thank you for taking this quiz")
 
 
 if __name__ == '__main__':
