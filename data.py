@@ -1,9 +1,10 @@
 import random
-from pprint import pprint
 
 
 def do_math():
+    import os
     print("Simple math problems")
+    print("os name is :", os.name)
     numbers = [random.randint(1, 20) for _ in range(10)]
     answers = []
     grades = []
@@ -43,23 +44,21 @@ if __name__ == '__main__':
 
 def cirkeldiagram():
     import datetime
+    import os
+    print("os name is :", os.name)
     datewis1 = datetime.date(2023, 9, 8)
 
     text = "Gemaakt door Luka op"
 
-    a = (int(input("Wat is het totaal? ")))
-    totaal_hoeveelheid = a
-
+    totaal_hoeveelheid = (int(input("Wat is het totaal? ")))
     b = (int(input("Wat is de hoeveelheid? ")))
-    hoeveelheid_van = b
 
     # noinspection PyRedundantParentheses
-    c = (360 / a) * (b)
-    hoeveel_graden = c
+    hoeveel_graden = (360 / totaal_hoeveelheid) * (b)
 
-    print("\nde hoek is", c, "graden\n")
+    print("\nde hoek is", hoeveel_graden, "graden\n")
 
-    print(f'{text}{s}{datewis1}')
+    print(f'{text}{datewis1}')
 
     from datetime import datetime
 
@@ -74,6 +73,8 @@ if __name__ == '__main__':
 
 
 def grades():
+    import os
+    print("os name is :", os.name)
     print("\nGrading System\n")
     grade = []
     for _ in range(5):
@@ -92,20 +93,23 @@ if __name__ == '__main__':
 
 def toolbox():
     import pprint
+    import os
+    from time import sleep
+    print("os name is :", os.name)
     person = []
     load = int(input("Contact Number Please\n"))
 
-    for _ in range(load + 1):
+    for _ in range(30):
         person.append(_)
     person[0] = ("Contact Card Bob", "Name : Bob Tutorial", "age : 75", "birthday : Apr 07 1846")
     person[1] = ("Contact Card Jan", "Name : Jan Tutorial", "age : 24", "birthday : jan 14 1999")
     person[2] = ("Contact Card Hola", "Name : Hola Tutorial", "age : 23", "birthday : jan 13 2000")
-    person[3] = ("Name = UnLorem")
-
+    person[3] = ("Contact Card Lorem", "Name : Lorem Ipsum", "age : 103", "birthday : sep 27 1920")
 
     person.insert(0, person)
     pp = pprint.PrettyPrinter(indent=4)
     pp.pprint(person[load])
+    sleep(4)
 
 
 if __name__ == '__main__':
