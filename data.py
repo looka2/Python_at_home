@@ -76,7 +76,7 @@ def cirkeldiagram():
     elif debug == '':
         print("Thank you for taking this quiz")
     else:
-        print("Thank you for taking this quiz")
+        print("Thank you for taking this script")
 
 
 if __name__ == '__main__':
