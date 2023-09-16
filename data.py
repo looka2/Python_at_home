@@ -130,10 +130,28 @@ def toolbox():
     if debug == 'y':
         print("\nos name is :", os.name, "\nThank you for taking this quiz")
     elif debug == '':
-        print("Thank you for taking this quiz")
+        print("Thank you for running this script")
     else:
-        print("Thank you for taking this quiz")
+        print("Thank you for running this script")
 
 
 if __name__ == '__main__':
     toolbox()
+
+def trial():
+    import os
+    from time import sleep
+    print("Waiting 5 seconds")
+    sleep(5)
+    debug = input("Would you like to print debug info y/N")
+    if debug == 'y':
+        print("\nos name is :", os.name, "\nThank you for running this script")
+    elif debug == '':
+        print("Thank you for running this script")
+    else:
+        print("Thank you for running this script")
+
+if __name__ = '__main__':
+    trial()
+
+
