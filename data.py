@@ -151,7 +151,7 @@ def trial():
     else:
         print("Thank you for running this script")
 
-if __name__ = '__main__':
+if __name__ == '__main__':
     trial()
 
 
