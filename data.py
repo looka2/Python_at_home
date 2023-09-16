@@ -1,6 +1,6 @@
 import random
 
-
+l.f = "luka"
 def do_math():
     import os
     print("Simple math problems")
