@@ -1,6 +1,5 @@
 import random
 
-
 def do_math():
     import os
     print("Simple math problems")
@@ -72,11 +71,11 @@ def cirkeldiagram():
     print("Uitgevoerd op", dt_n)
     debug = input("Would you like to print debug info y/N ")
     if debug == 'y':
-        print("\nos name is :", os.name, "\nThank you for taking this quiz")
+        print("\nos name is :", os.name, "\nThank you for running this script")
     elif debug == '':
-        print("Thank you for taking this quiz")
+        print("Thank you for running this script")
     else:
-        print("Thank you for taking this script")
+        print("Thank you for running this script")
 
 
 if __name__ == '__main__':
@@ -97,11 +96,11 @@ def grades():
     print("Your score is", avg, "%")
     debug = input("Would you like to print debug info y/N ")
     if debug == 'y':
-        print("\nos name is :", os.name, "\nThank you for taking this quiz")
+        print("\nos name is :", os.name, "\nThank you for running this script")
     elif debug == '':
-        print("Thank you for taking this quiz")
+        print("Thank you for running this script")
     else:
-        print("Thank you for taking this quiz")
+        print("Thank you for running this script")
 
 
 if __name__ == '__main__':
@@ -128,7 +127,7 @@ def toolbox():
     sleep(4)
     debug = input("Would you like to print debug info y/N ")
     if debug == 'y':
-        print("\nos name is :", os.name, "\nThank you for taking this quiz")
+        print("\nos name is :", os.name, "\nThank you for running this script")
     elif debug == '':
         print("Thank you for running this script")
     else:
@@ -141,6 +140,10 @@ if __name__ == '__main__':
 def trial():
     import os
     from time import sleep
+    b = 7
+    c = 489-b
+    a = b+c
+    print(c)
     print("Waiting 5 seconds")
     sleep(5)
     debug = input("Would you like to print debug info y/N")
@@ -153,5 +156,3 @@ def trial():
 
 if __name__ == '__main__':
     trial()
-
-
