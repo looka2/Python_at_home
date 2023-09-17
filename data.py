@@ -139,14 +139,13 @@ if __name__ == '__main__':
 
 def trial():
     import os
+    import random
     from time import sleep
-    b = 7
-    c = 489-b
-    a = b+c
-    print(c)
+    foodchoice = random.choice(['Pasta', 'Cheese', 'Burgers'])
+    print("Today you will eat", foodchoice)
     print("Waiting 5 seconds")
     sleep(5)
-    debug = input("Would you like to print debug info y/N")
+    debug = input("Would you like to print debug info y/N ")
     if debug == 'y':
         print("\nos name is :", os.name, "\nThank you for running this script")
     elif debug == '':
