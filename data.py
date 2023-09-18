@@ -155,3 +155,10 @@ def trial():
 
 if __name__ == '__main__':
     trial()
+
+
+def jesus():
+    print("Jesus Christ")
+
+if __name__ == '__main__':
+    jesus()
