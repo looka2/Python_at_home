@@ -159,6 +159,7 @@ if __name__ == '__main__':
 
 def jesus():
     jesus = "Holy"
+    holy = "Jesus"
     print("Our", jesus, "Jesus Christ")
 
 if __name__ == '__main__':
