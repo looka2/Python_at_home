@@ -19,8 +19,9 @@ req = datetime.strptime('2024-01-01 00:00:00', '%Y-%m-%d %H:%M:%S')
 now = datetime.now()
 
 while req > now:
-    print("Happy new year in %dd %dh %dm %ds" % daysHoursMinutesSecondsFromSeconds(dateDiffInSeconds(now, req)))
+    print("New year countdown\nHappy new year in %dd %dh %dm %ds" % daysHoursMinutesSecondsFromSeconds(dateDiffInSeconds(now, req)))
     sleep(1)
+    os.system('clear')
     now = datetime.now()
 
 
