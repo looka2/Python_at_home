@@ -2,6 +2,7 @@ from datetime import datetime, time
 from time import sleep
 import os
 
+pasta = "pasta"
 
 def dateDiffInSeconds(date1, date2):
     timedelta = date2 - date1
