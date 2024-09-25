@@ -162,6 +162,13 @@ def jesus():
     just-why = "Why am i doing this"
     holy = "Jesus"
     print("Our", jesus, "Jesus Christ")
-
-if __name__ == '__main__':
+ if __name__ == '__main__':
     jesus()
+
+def parabol():
+    import os
+    print("\nParabol tabel indeler\nVult automatisch een tabel in met in het midden de top van de parabol\n")
+    haakjes = input("")
+    if __name__ == '__main__':
+    parabol()
+
